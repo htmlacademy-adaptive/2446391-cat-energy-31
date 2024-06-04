@@ -1,0 +1,42 @@
+.html-academy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+
+  @media (min-width: 768px) {
+    gap: 23px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    min-width: 27px;
+    height: 34px;
+    mask-image: url("../../icons/htmlAcademy-logo.svg");
+    mask-repeat: no-repeat;
+    mask-size: 27px 34px;
+    background-color: $basic-dark-gray3;
+    transition: all 0.3s;
+  }
+
+  &:hover::after {
+    background-color: $basic-green;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+
+    @include link-bg;
+  }
+}
+
+.html-academy__text {
+  margin: 0;
+  color: $basic-dark-gray;
+  font-family: "lato", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}

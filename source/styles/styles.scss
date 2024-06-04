@@ -1,7 +1,38 @@
 /* GLOBAL */
 @import "./common/variables.scss";
+@import "./common/mixins.scss";
 @import "./common/global.scss";
 @import "./common/fonts.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/page-header";
+@import "./blocks/page-footer.scss";
+@import "./blocks/page.scss";
+@import "./blocks/centering-wraper.scss";
+@import "./blocks/visually-hiden.scss";
+@import "./blocks/title.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/social-list.scss";
+@import "./blocks/background-cat.scss";
+@import "./blocks/button.scss";
+@import "./blocks/address.scss";
+@import "./blocks/product-card.scss";
+@import "./blocks/product-card-more.scss";
+@import "./blocks/html-academy.scss";
+@import "./blocks/map.scss";
+@import "./blocks/before-after.scss";
+@import "./blocks/selection.scss";
+@import "./blocks/email-form.scss";
+
+//* ГЛАВНАЯ СТРАНИЦА
+
+@import "./blocks/main-page/promo.scss";
+@import "./blocks/main-page/catalogs.scss";
+@import "./blocks/main-page/how-work.scss";
+@import "./blocks/main-page/exemple.scss";
+
+//* СТРАНИЦА КАТАЛОГА
+
+@import "./blocks/catalog-page/products.scss";
+@import "./blocks/catalog-page/additional.scss";
+@import "./blocks/catalog-page/offers.scss";

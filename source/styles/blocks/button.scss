@@ -1,0 +1,42 @@
+.button {
+  transition: all 0.3s;
+  font-family: "oswald", "Arial", sans-serif;
+
+  &--primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 25px;
+    border: none;
+    color: $white;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    background-color: $basic-green;
+  }
+
+  &--secondary {
+    border: none;
+    color: $white;
+    text-align: center;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    background-color: $basic-green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+  }
+
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+
+    @include link-bg;
+  }
+}
